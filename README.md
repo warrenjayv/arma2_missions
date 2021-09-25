@@ -1,4 +1,4 @@
 # arma2_missions
-arma 2 missions I created for fun owo
++ arma 2 missions I created for fun owo
 
-recquires ARMA 2 1.00 
++ recquires ARMA 2 1.00 
