@@ -8,9 +8,12 @@
 # install
   1. clone to C:\Users\<username>\OneDrive\Documents\ArmA 2\missions
      - note: omit 'OneDrive' and use local Documents 
-# how to play 
+# how to play
+   
+  note: the fireteam only enters gunship if copilot is `pilot`. 
+   
   1. press F2 to select `copilot`.
-  2. command `copilot` to board `gunship` as `gunner`.
+  2. command `copilot` to board `gunship` as `pilot`.
   3. wait for the rapid response team to enter. 
   4. command `copilot` to get out / eject the `gunship`.
   5. wait for rapid response team to exit the `gunship`. 
