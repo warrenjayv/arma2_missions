@@ -8,6 +8,10 @@
 # install
   1. clone to C:\Users\<username>\OneDrive\Documents\ArmA 2\missions
      - note: omit 'OneDrive' and use local Documents 
+  2. run arma 2, go to `single player`, run `editor`, and load mission. 
+  3. click `preview` 
+  - save to single / mp missions to run scenario in these modes
+
 # how to play
    
   note: the fireteam only enters gunship if copilot is `pilot`. 
