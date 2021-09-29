@@ -25,3 +25,7 @@
   - spawning a non-player controlled fireteam
   - fireteam automatic boarding / eject gunship.
   
+future features:
+  - mission tasking & status 
+  - rearm / repair / refuel gunship
+  - random generated event
