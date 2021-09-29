@@ -7,4 +7,4 @@
   - mass shooter rapid response training beta
 # install
   1. clone to C:\Users\<username>\OneDrive\Documents\ArmA 2\missions
-   - omit 'OneDrive' and use local Documents 
+   note: omit 'OneDrive' and use local Documents 
