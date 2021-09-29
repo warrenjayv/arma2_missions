@@ -36,6 +36,7 @@
 		_newPosARRAY = []; 
 		_markPosARRAY = []; 
 		_civs_A = []; 
+		_curMark = 0;  
 	    
 		/// generate marker spawns /// 
 		for "_j" from 1 to op_civs_cnt do {

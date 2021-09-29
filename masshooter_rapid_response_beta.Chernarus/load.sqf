@@ -4,22 +4,21 @@
 /* execute vehicle is landed. */
 _return = true;
 
-
+/* reference spec ops */
+ _specs = [];
+ _specs = units spec_grp; 
+		
 while { (alt < 10) && (_return) } do 
 {
 
-     //#unit action ["moveToCargo", targetVehicle, cargoPosition]//
+     // unit action ["moveToCargo", targetVehicle, cargoPosition] //
 	 
+	 /// command the special units to enter chopper ///
 	 if ( driver ownship == copilot ) then {
 	 
 		//player globalChat "pilot checked"; 
-		
-		
-		/// command the special units to enter chopper ///
-	    _specs = [];
-		_specs = units spec_grp; 
-		
-		///command enter vehicle /// 
+		 
+		/// command enter vehicle /// 
 		spec_grp addVehicle ownship; 
 		_specs orderGetIn true;
 		
@@ -31,9 +30,16 @@ while { (alt < 10) && (_return) } do
 		}; //for{} 
 		**************************/
 		
-		 _return = false;
-		
 	 };
 	 
+	 /// command special units to leave chopper ///
+	 
+	 if ( driver ownship != copilot ) then {
+	     
+        _specs orderGetIn false; 		 
+	   
+	 };
+	 
+	 sleep 2; 
 
 };
