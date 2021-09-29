@@ -31,4 +31,5 @@ future features:
   - random generated event
 
 # screenshots
-![image](https://user-images.githubusercontent.com/40836157/135201340-a4d2661a-0270-448a-895e-04fb3f452e41.png)
+![image](https://user-images.githubusercontent.com/40836157/135201408-2c30384a-29eb-41c7-a5ce-e655904aac29.png)
+
