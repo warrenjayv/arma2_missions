@@ -14,8 +14,9 @@
 
 # how to play
    
-  note: the fireteam only enters gunship if copilot is `pilot`. 
-   
+  note: the fireteam only enters gunship if copilot is `pilot`.  
+    - the pilot (player) is the `gunner`
+ 
   1. press F2 to select `copilot`.
   2. command `copilot` to board `gunship` as `pilot`.
   3. wait for the rapid response team to enter. 
