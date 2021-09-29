@@ -15,5 +15,7 @@
   1. press F2 to select `copilot`.
   2. command `copilot` to board `gunship` as `pilot`.
   3. wait for the rapid response team to enter. 
-  4. command `copilot` to get out / eject the `gunship`.
-  5. wait for rapid response team to exit the `gunship`. 
+  4. press `m` to open map, select `copilot`, and use `move to` to set destination.
+  5. `gunship` turns on engine and flies to destination. 
+  6. command `copilot` to get out / eject the `gunship`; aircraft will land. 
+  7. wait for rapid response team to exit the `gunship`. 
