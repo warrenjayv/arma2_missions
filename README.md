@@ -19,3 +19,9 @@
   5. `gunship` turns on engine and flies to destination. 
   6. command `copilot` to get out / eject the `gunship`; aircraft will land. 
   7. wait for rapid response team to exit the `gunship`. 
+
+# source features
+  - random spawn points for civilians (via markers)
+  - spawning a non-player controlled fireteam
+  - fireteam automatic boarding / eject gunship.
+  
