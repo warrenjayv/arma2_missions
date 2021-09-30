@@ -8,7 +8,7 @@ alt = 0;
 
 /// ownship ///
 ownship flyInHeight 100;  // default
-ownship addEventHandler ["GetIn", "hint 'entered vehicle'"];
+//ownship addEventHandler ["GetIn", "hint 'entered vehicle'"];
 
 /// spawn the spec ops /// 
 
@@ -25,6 +25,10 @@ specs set [ 1, _spec_rifle ];
 specs set [ 2, _spec_sniper ];
 specs set [ 3, _spec_medic ]; 
 
+/// initiate scripts ///
+
+_events = execVM "events.sqf";
+
 /// main loop ////
 
 while { true } do 
@@ -32,7 +36,7 @@ while { true } do
     try {
 		if ( gunner ownship == player ) then {
 		
-		    //# get altitude #
+		    // get altitude //
 		    _pos = getPosATL ownship;
 			_alt = _pos select 2; 
 			alt = _alt; 

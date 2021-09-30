@@ -6,14 +6,12 @@ class Mission
 		"cacharacters2",
 		"CAAir2",
 		"chernarus",
-		"caweapons",
 		"caweapons_2b14_82mm_mortar"
 	};
 	addOnsAuto[]=
 	{
 		"cacharacters2",
 		"caweapons_2b14_82mm_mortar",
-		"caweapons",
 		"CAAir2",
 		"chernarus"
 	};
@@ -31,7 +29,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=4;
+		items=3;
 		class Item0
 		{
 			side="EAST";
@@ -85,24 +83,6 @@ class Mission
 		};
 		class Item2
 		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={8039.0708,269.30304,13664.769};
-					id=4;
-					side="GUER";
-					vehicle="SearchLight_Gue";
-					leader=1;
-					skill=0.60000002;
-					init="this allowDamage false;";
-				};
-			};
-		};
-		class Item3
-		{
 			side="CIV";
 			class Vehicles
 			{
@@ -111,7 +91,7 @@ class Mission
 				{
 					position[]={12017.378,159,12701.788};
 					azimut=150;
-					id=5;
+					id=4;
 					side="CIV";
 					vehicle="Secretary1";
 					leader=1;
@@ -137,7 +117,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=3;
+		items=7;
 		class Item0
 		{
 			position[]={12131.379,163.57478,12565.279};
@@ -159,6 +139,50 @@ class Mission
 			type="waypoint";
 			a=0.5;
 			b=0.5;
+		};
+		class Item3
+		{
+			position[]={8577.6963,179.92041,11941.8};
+			name="gvozdno";
+			markerType="ELLIPSE";
+			type="Empty";
+			fillName="Border";
+			a=20;
+			b=20;
+			drawBorder=1;
+		};
+		class Item4
+		{
+			position[]={12040.98,53.993717,9088.3906};
+			name="berezino";
+			markerType="ELLIPSE";
+			type="Empty";
+			fillName="Border";
+			a=20;
+			b=20;
+			drawBorder=1;
+		};
+		class Item5
+		{
+			position[]={9462.042,303.98999,8817.2832};
+			name="gorka";
+			markerType="ELLIPSE";
+			type="Empty";
+			fillName="Border";
+			a=20;
+			b=20;
+			drawBorder=1;
+		};
+		class Item6
+		{
+			position[]={6152.1753,300.99289,7713.3291};
+			name="stary_sobor";
+			markerType="ELLIPSE";
+			type="Empty";
+			fillName="Border";
+			a=20;
+			b=20;
+			drawBorder=1;
 		};
 	};
 	class Sensors
