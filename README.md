@@ -32,11 +32,11 @@
   - random spawn points for civilians (via markers)
   - spawning a non-player controlled fireteam
   - fireteam automatic boarding / eject gunship.
-  
+  - random trigger spawns
+
 future features:
   - mission tasking & status 
   - rearm / repair / refuel gunship
-  - random generated event(s)
 
 ![image](https://user-images.githubusercontent.com/40836157/135201469-56ae4965-37b4-4be2-a015-a532611104d2.png)
 
