@@ -5,6 +5,8 @@
 # history
 + 09/28/21 - push & commit `beta` branch
   - mass shooter rapid response training `beta` branch
++ 09/28/21 - random events / triggers generator
+
 # install
   1. clone to C:\Users\\\<username>\OneDrive\Documents\ArmA 2\missions
      - note: omit 'OneDrive' and use local Documents 
