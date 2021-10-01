@@ -29,7 +29,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			side="EAST";
@@ -97,6 +97,23 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					init="civ_grp_A = group this; this allowDamage false; ";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6259.9766,301.20001,7741.9609};
+					id=5;
+					side="EAST";
+					vehicle="RU_Soldier";
+					leader=1;
+					skill=0.60000002;
 				};
 			};
 		};

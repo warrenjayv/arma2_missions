@@ -7,7 +7,7 @@
 	   // # init of the spawn unit (men)
 	   // # set `op_pos_A = getPos this;` #
 	   
-	   op_civs_cnt = 5; 
+	   op_civs_cnt = 4; 
 	   
 	   // create group // 
 	   
@@ -39,7 +39,7 @@
 		_curMark = 0;  
 	    
 		/// generate marker spawns /// 
-		for "_j" from 1 to op_civs_cnt do {
+		for "_j" from 0 to op_civs_cnt do {
 		
 			_newPos = [ 0, 0 ]; 
 			_newPosX =  (op_pos_A select 0) + (random(60)-30);  
@@ -47,12 +47,12 @@
 			_newPos set [0, _newPosX];
 			_newPos set [1, _newPosY]; 
 			
-			_newPosARRAY set [ _j - 1, _newPos ]; 
+			_newPosARRAY set [ _j, _newPos ]; 
 			
 			_markN = createMarker [ format [ "markN%1", _j ], _newPos ];
 		    _markN setMarkerType "waypoint";
 			
-			_markPosARRAY set [ _j - 1, _markN ]; 
+			_markPosARRAY set [ _j, _markN ]; 
 		
 		};//for(){}
 
@@ -60,13 +60,13 @@
 	   hint str count _markPosARRAY; 
 
        /// spawn civilians /// 
-	    for "_i" from 1 to op_civs_cnt do { 
+	    for "_i" from 0 to op_civs_cnt do { 
 		
 			//# get the current marker position #
 			_curMark = (_markPosARRAY select _i); 
 			_curPos = getMarkerPos _curMark; 
 		
-			_civ = civ_grp_A createUnit [ format["RU_Hooker%1", _i], _curPos, [], 0, "FORM"]; 	
+			_civ = civ_grp_A createUnit [ format["RU_Hooker%1", (_i+1)], _curPos, [], 0, "FORM"]; 	
 			_civ allowDamage false; 
 			_civs_A set [ _i, _civ ]; 
 

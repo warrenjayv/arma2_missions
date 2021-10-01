@@ -9,7 +9,7 @@
  /* trigger locations */ 
  
  _mrks = [];
- _mrkpos = []; 
+ mrkpos = []; 
  
  _mrks set [ 0, "berezino" ];
  _mrks set [ 1, "gorka" ];
@@ -21,7 +21,7 @@
  _mrk = _mrks select _rand; 
  _mrk setMarkerSize [500, 500]; 
  
- _mrkpos = getMarkerPos _mrk; 
+ mrkpos = getMarkerPos _mrk; 
  
 
  player globalChat "trigger: ";
@@ -32,10 +32,16 @@
  
  /* generate triggers */ 
  
- _trgA = createTrigger ["EmptyDetector", getMarkerPos _mrk ];
- _trgA setTriggerArea [5, 5, 0, false];
- _trgA setTriggerActivation ["ANYPLAYER", "PRESENT", true];
- _trgA setTriggerStatements ["this", "hint 'Civilian near player'", "hint 'no civilian near'"];
+ _trgA = createTrigger ["EmptyDetector", mrkpos ];
+ _trgA setTriggerArea [500, 500, 0, false];
+ _trgA setTriggerActivation ["EAST", "PRESENT", true];
+ _trgA setTriggerStatements 
+  [
+    "this", 
+	"hint format['mass shooter in %1', _mrk]; 
+	_event = execVM 'event_shooter.sqf';", 
+	""
+   ];
 
 /* locations :
  *
