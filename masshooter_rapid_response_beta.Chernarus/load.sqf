@@ -1,5 +1,5 @@
 
-/* wait for init to finish */
+/// LOAD /// 
 
 /* execute vehicle is landed. */
 _return = true;
@@ -22,24 +22,20 @@ while { (alt < 10) && (_return) } do
 		spec_grp addVehicle ownship; 
 		_specs orderGetIn true;
 		
-		/************************
-		for "_i" from 0 to 4 do {
-			//(_specs select _i) setBehaviour "CARELESS";
-			
-			player globalChat (name (_specs select _i));
-		}; //for{} 
-		**************************/
 		
 	 };
 	 
 	 /// command special units to leave chopper ///
 	 
+	 
 	 if ( driver ownship != copilot ) then {
-	     
-        _specs orderGetIn false; 		 
-	   
+		 
+        _specs orderGetIn false;
+		//_specs doMove (getPos copilot); 
+		
 	 };
 	 
-	 sleep 2; 
+	 
+	 sleep 1; 
 
 };

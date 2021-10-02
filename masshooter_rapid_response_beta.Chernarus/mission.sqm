@@ -47,7 +47,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot";
-					init="pilot = this;                                                             script = [] execVM ""main.sqf"";";
+					init="pilot = this;                                                             script = [] execVM ""main.sqf""; this allowDamage false; ";
 				};
 				class Item1
 				{
@@ -70,7 +70,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={12005.752,159,12701.978};
+					position[]={13636.483,15.478279,13622.428};
 					special="NONE";
 					id=3;
 					side="GUER";
@@ -89,7 +89,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={12017.378,159,12701.788};
+					position[]={13625.364,23.815655,13599.837};
 					azimut=150;
 					id=4;
 					side="CIV";
@@ -204,10 +204,10 @@ class Mission
 	};
 	class Sensors
 	{
-		items=2;
+		items=1;
 		class Item0
 		{
-			position[]={12014.546,159,12695.461};
+			position[]={13645.442,23.035938,13587.26};
 			a=15;
 			b=15;
 			activationBy="EAST";
@@ -217,20 +217,6 @@ class Mission
 			text="op_trig_A";
 			name="op_trig_A";
 			expActiv="_op_trig_A_script = execVM ""op_trig_A.sqf"";";
-			class Effects
-			{
-			};
-		};
-		class Item1
-		{
-			position[]={12068.123,158.8,12681.883};
-			a=150;
-			b=150;
-			activationBy="EAST";
-			interruptable=1;
-			age="UNKNOWN";
-			name="load";
-			expActiv="_load = execVM ""load.sqf"";";
 			class Effects
 			{
 			};
