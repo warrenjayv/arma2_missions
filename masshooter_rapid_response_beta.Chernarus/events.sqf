@@ -23,7 +23,6 @@
  
  mrkpos = getMarkerPos _mrk; 
  
-
  player globalChat "trigger: ";
  player globalChat str _rand; 
  player globalChat _mrk; 
@@ -38,10 +37,13 @@
  _trgA setTriggerStatements 
   [
     "this", 
-	"hint format['mass shooter in %1', _mrk]; 
-	_event = execVM 'event_shooter.sqf';", 
+	" execVM 'event_shooter.sqf'; execVM 'unload.sqf';", 
 	""
    ];
+   
+  /* move player to trigger for testing */
+  //player setPos mrkpos; 
+
 
 /* locations :
  *

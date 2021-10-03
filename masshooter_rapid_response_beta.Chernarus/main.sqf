@@ -5,6 +5,7 @@
 /// initializations ///
 _strings = []; 
 alt = 0; 
+shootr_glb = 0; 
 
 /// ownship ///
 ownship flyInHeight 100;  // default
@@ -28,6 +29,7 @@ specs set [ 3, _spec_medic ];
 /// initiate scripts ///
 
 _events = execVM "events.sqf";
+_load = execVM "load.sqf";
 
 /// main loop ////
 
@@ -41,7 +43,7 @@ while { true } do
 			_alt = _pos select 2; 
 			alt = _alt; 
 			
-			player globalChat str _alt; 
+			//player globalChat str _alt; 
 		
 		}
 	} catch {
