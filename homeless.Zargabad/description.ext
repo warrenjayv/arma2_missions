@@ -1,0 +1,4 @@
+author        = "six";
+OnLoadName    = "homeless in zargabad";
+OnLoadMission = "you are homeless and they hate your ass";
+loadScreen    = "hiz.paa"
