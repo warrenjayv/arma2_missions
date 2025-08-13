@@ -112,10 +112,11 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
+					text="noff";
 				};
 				class Item2
 				{
-					position[]={8007.3242,296.04001,1946.7437};
+					position[]={7955.2832,473.39813,5715.439};
 					azimut=305;
 					special="NONE";
 					id=11;
@@ -225,7 +226,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			position[]={8469.3311,385.97559,6390.8779};
@@ -244,7 +245,7 @@ class Mission
 		class Item2
 		{
 			position[]={8031.1372,613.69824,6161.4165};
-			name="nato_tgt";
+			name="_ntgt";
 			type="Empty";
 			colorName="ColorBlue";
 		};
@@ -261,6 +262,28 @@ class Mission
 			name="_nbase_a";
 			type="Empty";
 			colorName="ColorBlue";
+		};
+		class Item5
+		{
+			position[]={7964.9004,476.16617,5723.2178};
+			name="_nlz";
+			type="Empty";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={7958.8701,474.84979,5720.2246};
+			a=240;
+			b=240;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+			};
 		};
 	};
 };
