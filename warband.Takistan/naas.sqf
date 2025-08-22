@@ -28,17 +28,21 @@ while { alive _noff } do
   _unit3 = _grp createUnit [ "US_Soldier_TL_EP1", _npos, [], 0, "FORM" ];
   _unit3 moveInCargo _nheli; 
 
+  _unit4 = _grp createUnit [ "US_Soldier_AAR_EP1", _npos, [], 0, "FORM" ];
+  _unit4 moveInCargo _nheli; 
+
 
   _unit1 addEventHandler[ "GetOut", { _unit1 leaveVehicle _nheli; }];
   _unit2 addEventHandler[ "GetOut", { _unit2 leaveVehicle _nheli; }]; 
   _unit3 addEventHandler[ "GetOut", { _unit3 leaveVehicle _nheli; }]; 
+  _unit4 addEventHandler[ "GetOut", { _unit4 leaveVehicle _nheli; }];
 
   _units = units _grp; 
 
   _nheli doMove _nlz;
   waitUntil { moveToCompleted _nheli }; 
 
-  doGetOut [ _unit1, _unit2, _unit3 ]; 
+  doGetOut [ _unit1, _unit2, _unit3, _unit4 ]; 
   _units orderGetin false; 
   _units allowGetIn false;
   
