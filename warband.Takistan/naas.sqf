@@ -39,12 +39,11 @@ while { alive _noff } do
   waitUntil { moveToCompleted _nheli }; 
 
   doGetOut [ _unit1, _unit2, _unit3 ]; 
-  _units allowGetIn false; 
+  _units orderGetin false; 
+  _units allowGetIn false;
   
-  systemchat "units left"; 
-
   _units doMove _ntgt; 
-  waitUntil { moveToCompleted _units }; 
+  waitUntil { { moveToCompleted _x; } foreach _units; }; 
 
   _canspawn = false; 
 
