@@ -50,6 +50,7 @@ class Mission
 					id=0;
 					side="EAST";
 					vehicle="TK_INS_Soldier_3_EP1";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -77,7 +78,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={8020.2422,611.97754,6153.521};
+					position[]={8023.4673,612.53583,6155.8677};
 					id=8;
 					side="EAST";
 					vehicle="TK_INS_Soldier_AT_EP1";
@@ -116,13 +117,12 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={7955.2832,473.39813,5715.439};
+					position[]={8019.7441,296.04001,1979.5906};
 					azimut=305;
 					special="NONE";
 					id=11;
 					side="WEST";
 					vehicle="US_Soldier_EP1";
-					player="PLAYER COMMANDER";
 					rank="CAPTAIN";
 					skill=0.60000002;
 				};
@@ -265,7 +265,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={7964.9004,476.16617,5723.2178};
+			position[]={8091.5244,331.75958,2996.1394};
 			name="_nlz";
 			type="Empty";
 		};
@@ -275,7 +275,7 @@ class Mission
 		items=1;
 		class Item0
 		{
-			position[]={7958.8701,474.84979,5720.2246};
+			position[]={7836.7227,467.07028,5631.936};
 			a=240;
 			b=240;
 			activationBy="WEST";
