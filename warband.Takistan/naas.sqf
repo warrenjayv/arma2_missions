@@ -6,8 +6,6 @@ _ntgt = getMarkerPos "_ngt";
 _txt  = formatText["bf attack: %1", _ntgt];
 hint _txt; sleep 3; hintSilent "";
 
-heli commandMove _ntgt;
-
 _noff = noff; 
 _npos = getMarkerPos "_nbase_a";
 
@@ -28,7 +26,7 @@ while { alive _noff } do
   _unit3 = _grp createUnit [ "US_Soldier_TL_EP1", _npos, [], 0, "FORM" ];
   _unit3 moveInCargo _nheli; 
 
-  _unit4 = _grp createUnit [ "US_Soldier_AAR_EP1", _npos, [], 0, "FORM" ];
+  _unit4 = _grp createUnit [ "US_Soldier_AR_EP1", _npos, [], 0, "FORM" ];
   _unit4 moveInCargo _nheli; 
 
 
@@ -51,6 +49,6 @@ while { alive _noff } do
 
   _canspawn = false; 
 
-  sleep 60; 
+  sleep 30; 
 
 };

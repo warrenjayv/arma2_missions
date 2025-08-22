@@ -42,7 +42,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={8019.7148,610.93207,6148.2153};
@@ -82,6 +82,15 @@ class Mission
 					id=8;
 					side="EAST";
 					vehicle="TK_INS_Soldier_AT_EP1";
+					skill=0.60000002;
+				};
+				class Item4
+				{
+					position[]={8026.8667,612.60181,6153.5332};
+					azimut=65;
+					id=26;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
 					skill=0.60000002;
 				};
 			};
@@ -175,7 +184,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5;
+		items=15;
 		class Item0
 		{
 			position[]={8019.8784,614.82562,6170.9912};
@@ -223,6 +232,92 @@ class Mission
 			vehicle="TKLaunchers_EP1";
 			skill=0.60000002;
 		};
+		class Item5
+		{
+			position[]={8009.7808,612.48651,6160.6362};
+			id=16;
+			side="EMPTY";
+			vehicle="DSHKM_TK_GUE_Bag_EP1";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={8009.9116,612.21002,6159.2617};
+			id=17;
+			side="EMPTY";
+			vehicle="DSHKM_TK_GUE_Bag_EP1";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={8009.8677,611.81543,6157.6689};
+			id=18;
+			side="EMPTY";
+			vehicle="DSHKM_TK_GUE_Bag_EP1";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={8009.7388,611.34515,6155.8633};
+			id=19;
+			side="EMPTY";
+			vehicle="DSHKM_TK_GUE_Bag_EP1";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={8012.1035,613.38647,6164.0322};
+			azimut=65;
+			id=20;
+			side="EMPTY";
+			vehicle="TKBasicWeapons_EP1";
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={8009.8687,612.97754,6162.8721};
+			azimut=65;
+			id=21;
+			side="EMPTY";
+			vehicle="TKBasicWeapons_EP1";
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={8011.1577,612.63031,6160.8511};
+			azimut=65;
+			id=22;
+			side="EMPTY";
+			vehicle="TKBasicAmmunitionBox_EP1";
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={8012.2324,612.79706,6161.2808};
+			azimut=65;
+			id=23;
+			side="EMPTY";
+			vehicle="TKBasicAmmunitionBox_EP1";
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={8008.8369,613.4303,6164.8931};
+			azimut=65;
+			id=24;
+			side="EMPTY";
+			vehicle="TKBasicAmmunitionBox_EP1";
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={8010.082,613.61261,6165.3228};
+			azimut=65;
+			id=25;
+			side="EMPTY";
+			vehicle="TKBasicWeapons_EP1";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
@@ -265,7 +360,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={8091.5244,331.75958,2996.1394};
+			position[]={7869.8071,464.82001,5619.1108};
 			name="_nlz";
 			type="Empty";
 		};
